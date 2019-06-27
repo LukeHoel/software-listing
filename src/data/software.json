@@ -6,5 +6,9 @@
   },
   { "name": "OSX", "source": "Apple", "link": "https://www.apple.com/macos" },
   { "name": "Ubuntu", "source": "Canonical", "link": "https://ubuntu.com/" },
-  { "name": "Manjaro", "source": "Community", "link": "https://manjaro.org" }
+  {
+    "name": "Arch",
+    "source": "Community",
+    "link": "https://www.archlinux.org/"
+  }
 ]
