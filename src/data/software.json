@@ -7,7 +7,7 @@
   { "name": "OSX", "source": "Apple", "link": "https://www.apple.com/macos" },
   { "name": "Ubuntu", "source": "Canonical", "link": "https://ubuntu.com/" },
   {
-    "name": "Arch",
+    "name": "Arch Linux",
     "source": "Community",
     "link": "https://www.archlinux.org/"
   }
