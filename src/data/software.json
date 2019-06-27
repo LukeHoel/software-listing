@@ -5,7 +5,11 @@
     "link": "https://www.microsoft.com/en-us/windows"
   },
   { "name": "OSX", "source": "Apple", "link": "https://www.apple.com/macos" },
-  { "name": "Ubuntu", "source": "Canonical", "link": "https://ubuntu.com/" },
+  {
+    "name": "Ubuntu Linux",
+    "source": "Canonical",
+    "link": "https://ubuntu.com/"
+  },
   {
     "name": "Arch Linux",
     "source": "Community",

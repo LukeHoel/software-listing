@@ -1,5 +1,0 @@
-#!/bin/bash
-npm run build
-if [ $? -eq 0 ]; then
-    git subtree push --prefix build origin gh-pages
-fi
