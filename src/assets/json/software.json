@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Windows",
+    "source": "Microsoft",
+    "link": "https://www.microsoft.com/en-us/windows",
+    "logo": "windows.svg"
+  },
+  {
+    "name": "OSX",
+    "source": "Apple",
+    "link": "https://www.apple.com/macos",
+    "logo": "macos.svg"
+  },
+  {
+    "name": "Ubuntu Linux",
+    "source": "Canonical",
+    "link": "https://ubuntu.com/",
+    "logo": "ubuntu.svg"
+  },
+  {
+    "name": "Arch Linux",
+    "source": "Community",
+    "link": "https://www.archlinux.org/",
+    "logo": "archlinux.svg"
+  }
+]
