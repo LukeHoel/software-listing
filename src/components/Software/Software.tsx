@@ -10,7 +10,7 @@ export class SoftwareDef {
 const software = (input: SoftwareDef) => (
   <Card>
     <div className="Header">
-      <img src={`/svg/${input.logo}`} alt={input.name} />
+      <img src={`svg/${input.logo}`} alt={input.name} />
       <b>{input.name}</b>
     </div>
     <a href={input.link}>{input.link}</a>
