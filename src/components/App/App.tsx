@@ -12,7 +12,7 @@ interface AppState {
 class App extends React.Component<any, AppState> {
   constructor(props: any) {
     super(props);
-    this.state = { menuOpen: false };
+    this.state = { menuOpen: true };
 
     this.toggleMenu = this.toggleMenu.bind(this);
   }
