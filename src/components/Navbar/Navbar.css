@@ -1,0 +1,33 @@
+.Navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 48px;
+  z-index: 999;
+  background-color: #0d47a1;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.Navbar .Title {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.MenuButton {
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  transition: background-color 0.15s ease;
+}
+.MenuButton:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.MenuButton:active {
+  background-color: rgba(255, 255, 255, 0.1);
+}

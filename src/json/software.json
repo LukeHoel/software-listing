@@ -3,24 +3,28 @@
     "name": "Windows",
     "source": "Microsoft",
     "link": "https://www.microsoft.com/en-us/windows",
-    "logo": "windows.svg"
+    "logo": "windows.svg",
+    "desc": "nanny state"
   },
   {
     "name": "OSX",
     "source": "Apple",
     "link": "https://www.apple.com/macos",
-    "logo": "macos.svg"
+    "logo": "macos.svg",
+    "desc": "good os, held back by bad hardware"
   },
   {
     "name": "Ubuntu Linux",
     "source": "Canonical",
     "link": "https://ubuntu.com/",
-    "logo": "ubuntu.svg"
+    "logo": "ubuntu.svg",
+    "desc": "Most popular gnu/linux operating system"
   },
   {
     "name": "Arch Linux",
     "source": "Community",
     "link": "https://www.archlinux.org/",
-    "logo": "archlinux.svg"
+    "logo": "archlinux.svg",
+    "desc": "Rolling release distro"
   }
 ]

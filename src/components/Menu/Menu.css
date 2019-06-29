@@ -1,0 +1,19 @@
+.ContentOffset {
+  position: relative;
+  top: 48px;
+  height: calc(100vh - 48px);
+  display: flex;
+}
+.Content {
+  flex-grow: 1;
+}
+.Menu {
+  height: 100%;
+  background-color: #f2f2f2;
+  margin: 0;
+  transition: width 0.15s ease;
+  overflow: hidden;
+}
+.MenuContent {
+  padding: 8px;
+}
