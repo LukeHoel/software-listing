@@ -1,0 +1,7 @@
+.SearchMenu {
+  padding: 8px;
+}
+.SearchMenu input[type="text"] {
+  width: 80%;
+  margin-bottom: 10px;
+}
