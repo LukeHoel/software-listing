@@ -2,7 +2,6 @@ import React from "react";
 import { menuWidth } from "../Menu/Menu";
 import { search } from "../../utils/Search";
 import "./SearchMenu.css";
-
 interface SearchMenuState {
   searchText: string;
 }

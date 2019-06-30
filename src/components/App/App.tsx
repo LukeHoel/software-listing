@@ -1,18 +1,18 @@
 import React from "react";
 import "./App.css";
-import SoftwareList from "../Software/Software";
-import software from "../../json/software.json";
-import { Navbar, MenuButton } from "../Navbar/Navbar";
-import { Menu } from "../Menu/Menu";
+import { Navbar } from "../Navbar/Navbar";
+import Menu from "../Menu/Menu";
+import SearchResults from "../SearchResults/SearchResults";
 
 interface AppState {
   menuOpen: boolean;
+  searchResults: any[];
 }
 
 class App extends React.Component<any, AppState> {
   constructor(props: any) {
     super(props);
-    this.state = { menuOpen: true };
+    this.state = { menuOpen: true, searchResults: [] };
 
     this.toggleMenu = this.toggleMenu.bind(this);
   }
@@ -21,15 +21,14 @@ class App extends React.Component<any, AppState> {
     this.setState({ menuOpen: !this.state.menuOpen });
   }
 
+  search(searchParams: any) {}
+
   render() {
     return (
       <div className="App">
-        <Navbar>
-          {MenuButton(this.toggleMenu)}
-          <span className="Title">Software Listing</span>
-        </Navbar>
-        <Menu menuOpen={this.state.menuOpen} menuItems={["All", "OS"]}>
-          {SoftwareList(software)}
+        <Navbar />
+        <Menu>
+          <SearchResults />
         </Menu>
       </div>
     );
