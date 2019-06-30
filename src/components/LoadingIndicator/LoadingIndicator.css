@@ -1,0 +1,29 @@
+.LoadingIndicator {
+  display: flex;
+}
+.LoadingBall {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  position: relative;
+  margin: 5px;
+  animation: move 0.5s ease-in-out alternate infinite;
+  background-color: #b0bec5;
+  top: -15px;
+}
+.LoadingBall.Second {
+  animation-delay: 0.1s;
+}
+.LoadingBall.Third {
+  animation-delay: 0.2s;
+}
+@keyframes move {
+  0% {
+    top: -15px;
+    background-color: #b0bec5;
+  }
+  100% {
+    top: 15px;
+    background-color: #64b5f6;
+  }
+}

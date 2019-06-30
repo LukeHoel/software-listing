@@ -5,6 +5,7 @@ import { SearchResultDef } from "../../models/SearchResultDef";
 import { slideIn, enableScroll } from "../../utils/Animation";
 import { connect } from "react-redux";
 import { State } from "../../Store/State";
+import { LoadingIndicator } from "../LoadingIndicator/LoadingIndicator";
 
 const SearchResult = (input: SearchResultDef, index: number) => (
   <Card class="SearchResult" style={slideIn(index)}>
@@ -17,7 +18,9 @@ const SearchResult = (input: SearchResultDef, index: number) => (
 );
 
 const ResultPlaceholder = (loading: boolean) => (
-  <div style={{ margin: "10px" }}>{loading ? "Loading" : "No Results"}</div>
+  <div className="ResultPlaceholder">
+    {loading ? <LoadingIndicator /> : "No Results"}
+  </div>
 );
 
 // Handle animation for each sliding in on load with helpers
