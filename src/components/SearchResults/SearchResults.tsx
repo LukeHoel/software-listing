@@ -6,14 +6,14 @@ import { slideIn, enableScroll } from "../../utils/Animation";
 import { connect } from "react-redux";
 import { State } from "../../Store/State";
 import { LoadingIndicator } from "../LoadingIndicator/LoadingIndicator";
+import { AvailablePlatforms } from "../AvailablePlatforms/AvailablePlatforms";
 
 const SearchResult = (input: SearchResultDef, index: number) => (
   <Card class="SearchResult" style={slideIn(index)}>
     <div className="Header">
       <b>{input.name}</b>
     </div>
-    {/* <p>{input.desc}</p> */}
-    {/* <a href={input.link}>{input.link}</a> */}
+    <AvailablePlatforms platforms={input.platforms || []} />
   </Card>
 );
 

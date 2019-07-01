@@ -1,0 +1,10 @@
+.AvailablePlatforms {
+  display: flex;
+  margin-top: 10px;
+}
+.AvailablePlatforms label {
+  margin-right: 10px;
+}
+.Platform {
+  width: 20px;
+}
