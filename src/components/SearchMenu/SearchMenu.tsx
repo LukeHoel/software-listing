@@ -14,7 +14,7 @@ export class SearchMenu extends React.Component<any, SearchMenuState> {
   }
 
   submit(event: any) {
-    search(`debian/${this.state.searchText}`);
+    search(`search/${this.state.searchText}`);
     event.preventDefault();
   }
 

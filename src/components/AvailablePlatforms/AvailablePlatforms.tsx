@@ -8,6 +8,6 @@ const Platform = (platform: string) => (
 export const AvailablePlatforms = (props: any) => (
   <div className="AvailablePlatforms">
     <label>Available Platforms</label>
-    {props.platforms.map((platform: string) => Platform(platform))}
+    {props.platforms.sort().map((platform: string) => Platform(platform))}
   </div>
 );
