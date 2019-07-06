@@ -1,4 +1,5 @@
 .SearchMenu {
+  width: 100%;
   padding: 8px;
 }
 .SearchMenu input[type="text"] {

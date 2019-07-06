@@ -1,5 +1,4 @@
 import React from "react";
-import { menuWidth } from "../Menu/Menu";
 import { search } from "../../utils/Search";
 import "./SearchMenu.css";
 interface SearchMenuState {
@@ -20,7 +19,7 @@ export class SearchMenu extends React.Component<any, SearchMenuState> {
 
   render() {
     return (
-      <div className="SearchMenu" style={{ width: menuWidth }}>
+      <div className="SearchMenu">
         <form onSubmit={this.submit}>
           <input
             type="text"

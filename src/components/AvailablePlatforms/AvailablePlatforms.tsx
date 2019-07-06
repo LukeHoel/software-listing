@@ -5,7 +5,11 @@ const Platform = (platform: string) => (
   <img className="Platform" src={`svg/${platform}.svg`} alt={""} />
 );
 
-export const AvailablePlatforms = (props: any) => (
+interface AvailablePlatformsProps {
+  platforms: string[];
+}
+
+export const AvailablePlatforms = (props: AvailablePlatformsProps) => (
   <div className="AvailablePlatforms">
     <label>Available Platforms</label>
     {props.platforms.sort().map((platform: string) => Platform(platform))}

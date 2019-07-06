@@ -1,15 +1,10 @@
 import { InitialState, State } from "./State";
 import {
-  ToggleMenuAction,
   CompleteSearchAction,
-  StartSearchAction
+  StartSearchAction,
+  OpenModalAction,
+  CloseModalAction
 } from "./Actions";
-
-// Open and close menu
-const ToggleMenuReducer = (state: State): State => ({
-  ...state,
-  menuOpen: !state.menuOpen
-});
 
 // Display loading indicator and remove old search results
 const StartSearchReducer = (state: State) => ({
@@ -25,9 +20,21 @@ const CompleteSearchReducer = (state: State, action: any) => ({
   searchResults: [...action.searchResults]
 });
 
+// Open modal with content
+const OpenModalReducer = (state: State, action: any) => ({
+  ...state,
+  modalContent: action.modalContent
+});
+
+const CloseModalReducer = (state: State) => ({
+  ...state,
+  modalContent: undefined
+});
+
 export const reducerMap: any = {
   INIT: () => InitialState,
-  [ToggleMenuAction]: ToggleMenuReducer,
   [StartSearchAction]: StartSearchReducer,
-  [CompleteSearchAction]: CompleteSearchReducer
+  [CompleteSearchAction]: CompleteSearchReducer,
+  [OpenModalAction]: OpenModalReducer,
+  [CloseModalAction]: CloseModalReducer
 };

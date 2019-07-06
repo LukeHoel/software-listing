@@ -1,8 +1,9 @@
 import React from "react";
 import "./App.css";
 import { Navbar } from "../Navbar/Navbar";
-import Menu from "../Menu/Menu";
 import SearchResults from "../SearchResults/SearchResults";
+import Modal from "../Modal/Modal";
+import Menu from "../Menu/Menu";
 
 interface AppState {
   menuOpen: boolean;
@@ -30,6 +31,7 @@ class App extends React.Component<any, AppState> {
         <Menu>
           <SearchResults />
         </Menu>
+        <Modal content={<div>Test content</div>} />
       </div>
     );
   }

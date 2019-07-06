@@ -2,18 +2,30 @@ import React from "react";
 import "./SearchResults.css";
 import { Card } from "../Card/Card";
 import { SearchResultDef } from "../../models/SearchResultDef";
-import { slideIn, enableScroll } from "../../utils/Animation";
+import { slideIn } from "../../utils/Animation";
 import { connect } from "react-redux";
 import { State } from "../../Store/State";
 import { LoadingIndicator } from "../LoadingIndicator/LoadingIndicator";
 import { AvailablePlatforms } from "../AvailablePlatforms/AvailablePlatforms";
+import { store } from "../../Store/Store";
+import { OpenModalAction } from "../../Store/Actions";
+import { SearchResultDetail } from "../SearchResultDetail/SearchResultDetail";
 
 const SearchResult = (input: SearchResultDef, index: number) => (
-  <Card class="SearchResult" style={slideIn(index)}>
+  <Card
+    className="SearchResult"
+    style={slideIn(index)}
+    onClick={() =>
+      store.dispatch({
+        type: OpenModalAction,
+        modalContent: SearchResultDetail(input)
+      })
+    }
+  >
     <div className="Header">
       <b>{input.name}</b>
     </div>
-    <AvailablePlatforms platforms={input.platforms || []} />
+    <AvailablePlatforms platforms={input.platforms} />
   </Card>
 );
 
@@ -25,10 +37,7 @@ const ResultPlaceholder = (loading: boolean) => (
 
 // Handle animation for each sliding in on load with helpers
 const SearchResultList = (props: any) => (
-  <div
-    className="SearchResultList"
-    style={enableScroll(props.searchResults.length)}
-  >
+  <div className="SearchResultList">
     {/* Results placeholder or loading symbol */}
     {props.searchResults.length === 0 ? ResultPlaceholder(props.loading) : ""}
 

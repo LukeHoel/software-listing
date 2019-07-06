@@ -12,9 +12,3 @@ export const slideIn = (index: number) => {
     animation: `slide ${calculateSlideLength(index)}s ease forwards`
   };
 };
-
-export const enableScroll = (count: number) => {
-  return {
-    animation: `enableScroll ${calculateSlideLength(count)}s linear forwards`
-  };
-};

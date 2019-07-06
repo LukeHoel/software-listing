@@ -1,6 +1,6 @@
 .SearchResultList {
-  overflow: hidden;
   height: 100%;
+  overflow: auto;
 }
 .Header {
   display: flex;
@@ -12,6 +12,14 @@
 }
 .SearchResult {
   transform: translateY(100vh);
+  transition: background-color 0.15s ease;
+}
+.SearchResult:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+.SearchResult:active {
+  background-color: #ddd;
 }
 @keyframes slide {
   to {
